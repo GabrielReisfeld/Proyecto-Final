@@ -1,0 +1,174 @@
+body {
+	background-color: #f2f2f2;
+}
+.navbar {
+	background-color: #1f2121;
+	.logoHome:hover{
+		animation: pulse;
+		animation-duration: 0.8s;
+	}
+	.navbar-nav {
+	font-size: 30px;
+	li {
+		a {
+			img {
+				opacity: 0.6;
+				&:hover {
+					opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}
+
+.carousel {
+	margin-bottom: 2rem;
+	.carousel-caption {
+	bottom: 5rem;
+	z-index: 10;
+	background: rgba(89, 89, 89, 0.46);
+		h1 {
+		font-size: 42px;
+		}
+		p{
+		font-size: 20px;
+		}
+	}
+	.carousel-item {
+	height: 32rem;
+	&>img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 36rem;
+		}
+	}
+	.imgcarousel {
+	opacity: 0.8;
+	}
+}
+.imgPrincipios{
+		width: 100px;
+		height: auto;
+}
+
+.portadaHistoria {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-image: url(../Multimedia/portadaHistoria.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:before {
+		content: " ";
+		width: 100%;
+		height: 100%;
+		background: rgba(87,105,117,0.8);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	h1 {
+		position: relative;
+		color: white;
+		font-size: 40px;
+		letter-spacing: 2px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+}
+.jumbotronHistoria{
+	h2{
+		font-size: 28px;
+		color: #d8be93;
+	}
+	p{
+		font-size: 18px;
+	}
+}
+
+.portadaIntegrantes {
+	@extend .portadaHistoria;
+	background-image: url(../Multimedia/portadaIntegrantes.jpg);
+}
+.redesIntegrantes{
+	a{
+		i{
+			font-size: 35px;
+		}
+	}	
+}
+
+.portadaAreasDePractica {
+	@extend .portadaHistoria;
+	background-image: url(../Multimedia/portadaAreasDePractica.jpg);
+}
+.jumbotronAreas{
+	h2{
+		font-size: 40px;
+		color: #d8be93;
+	}
+}
+.jumbotronIntegrantes{
+	@extend .jumbotronAreas;
+}
+.jumbotronNovedades{
+	@extend .jumbotronAreas;
+}
+
+.portadaNovedades {
+	@extend .portadaHistoria;
+	background-image: url(../Multimedia/portadaNovedades.jpg);
+}
+.publicacion{
+	.publicacionIndividual{
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+	a{
+		text-decoration: none;
+		img{
+			width: 300px;
+			height: 180px;
+		}
+		h4{
+		font-size: 20px;
+		color: black;
+		}
+	}
+}
+
+.portadaContacto {
+	@extend .portadaHistoria;
+	background-image: url(../Multimedia/portadaContacto.jpg);
+}
+
+.footer{
+	background-color: black;
+}
+
+.redesSociales {
+	img {
+		&:hover {
+			opacity: 0.4;
+		}
+	}
+}
+.subir{
+	position: sticky;
+	bottom: 0;
+	float: right;
+	background-color: #d8be93;
+	border-color: #d8be93;
+	i{
+		font-size: 30px;
+	}
+}
